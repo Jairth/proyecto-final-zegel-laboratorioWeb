@@ -1,0 +1,66 @@
+.wrapper {
+  --boxed-size: 90rem;
+  --boxed: max(calc((100vw - var(--boxed-size)) / 2), 1.25rem);
+  padding-inline: var(--boxed) !important;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--bg-btn, var(--cl-green));
+  color: var(--cl-btn, var(--cl-white-base));
+  line-height: 1;
+  font-size: var(--size-btn);
+  font-weight: 600;
+  padding-block: 0.5rem 0.85rem;
+  padding-inline: 1.5rem;
+  transition: background-color 250ms ease;
+
+  &:hover {
+    background-color: var(--bg-hover, var(--cl-black-base));
+    color: var(--cl-hover, var(--cl-white-base));
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.logo {
+  width: var(--width, clamp(11.25rem, 5.0665rem + 19.7872vi, 22.875rem));
+}
+
+.social__icon {
+  width: clamp(2.8125rem, 2.1476rem + 2.1277vi, 4.0625rem);
+}
+
+.background {
+  background-color: var(--bg, transparent);
+}
+
+.title {
+  font-size: var(--size-title);
+  color: var(--cl, var(--cl-black-base));
+  font-weight: 600;
+  text-align: center;
+  text-wrap: pretty;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.paragraph {
+  color: var(--cl, var(--color-black-base));
+  font-size: var(--size-prgh);
+  font-weight: 500;
+  text-align: center;
+  text-wrap: balance;
+  width: 95%;
+  margin: 0;
+}
+
+.highlight {
+  color: var(--cl, var(--cl-primary));
+}
