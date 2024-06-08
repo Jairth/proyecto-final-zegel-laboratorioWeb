@@ -4,6 +4,8 @@
   padding-inline: var(--boxed) !important;
 }
 
+
+/**** Button default ****/
 .button {
   display: inline-block;
   background-color: var(--bg-btn, var(--cl-green));
@@ -21,6 +23,8 @@
   }
 }
 
+
+/**** Hide element ****/
 .visually-hidden {
   position: absolute;
   width: 1px;
