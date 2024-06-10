@@ -119,6 +119,9 @@
     .column:nth-child(3) {
         margin-top: -8rem;
     }
+    .container__image::after {
+        display: none;
+    }
 }
 @media (width < 501px) {
     .masonry__wrapper {
