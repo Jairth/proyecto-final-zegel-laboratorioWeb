@@ -377,7 +377,7 @@ body:has(#toggle:checked) .hamburger__line:nth-child(2) {
 
 @media (width <= 768px) {
   .logos__wrapper {
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 
